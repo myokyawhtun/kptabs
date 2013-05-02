@@ -3,13 +3,13 @@
 kpTabs is a jquery plugin created by Myo Kyaw Htun to display the tabs and sub tabs.
 
 ##Usage
-
+### Javascript
 ```javascript
 $(document).ready(function(){
 	$("#tabWrap").kptabs();
 });
 ```
-
+###HTML
 ```html
 <div id="tabWrap">
 	<div class="tab" data-rel="News">
@@ -50,7 +50,7 @@ $(document).ready(function(){
 	</div>
 </div>
 ```
-
+###CSS
 ```css
 /* tab and sub tab */
 .tab,.subtab{
