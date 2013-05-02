@@ -7,3 +7,36 @@
 .selectedTab,.selectedSubTab{
 	display: block;
 }
+
+/*
+generated Top level Tab Navigation
+*/
+#tabsNav {
+	overflow: hidden;
+	border-bottom:1px solid #ddd;
+}
+#tabsNav ul, .subNav ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+#tabsNav li, .subNav li{
+	display: inline-block;
+}
+#tabsNav a, .subNav a{
+	display: block;
+	padding:5px 10px;
+	text-decoration: none;
+	
+}
+.subNav{
+	margin:10px;
+	
+}
+#tabsNav a.selectedNav{
+	background: #eee;
+}
+.subNav a.selectedSubNav{
+	background: #ddf;
+}

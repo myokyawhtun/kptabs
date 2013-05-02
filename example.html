@@ -6,16 +6,122 @@
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css' />
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.kptabs.js"></script>
+		<link rel="stylesheet" type="text/css" href="kptabs.css" />
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#tabWrap").kptabs();
+			});
+		</script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<h1>kpTabs jQuery plugin</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div id="tabWrap">
+				<div class="tab" data-rel="Intro">
+					<h3>kpTabs jQuery plugin</h3>
+					<p>kpTabs is a jQuery plugin created by <a href="http://www.myokyawhtun.com">Myo Kyaw Htun</a></p>
+					<p>
+					This tab doesn't have sub tab.</p>
+				</div>
+				<div class="tab" data-rel="Code">
+					<div class="subtab" data-rel="HTML">
+						<h3>HTML</h3>
+						<code>
+						<pre>	
+&lt;div id="tabWrap"&gt;
+	&lt;div class="tab" data-rel="Intro"&gt;
+
+	&lt;/div&gt;
+	&lt;div class="tab" data-rel="Code"&gt;
+		&lt;div class="subtab" data-rel="HTML"&gt;
+
+		&lt;/div&gt;
+		&lt;div class="subtab" data-rel="jQuery"&gt;
+
+		&lt;/div&gt;
+		&lt;div class="subtab" data-rel="CSS"&gt;
+
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="tab" data-rel="Info"&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;				
+						</pre>
+						</code>
+						<p>
+							data-rel is used for displaying the tab name
+						</p>
+					</div>
+					<div class="subtab" data-rel="jQuery">
+						<h3>jQuery</h3>
+						<code>
+							<pre>
+$(document).ready(function(){
+	$("#tabWrap").kptabs();
+});
+							</pre>
+						</code>
+					</div>
+					<div class="subtab" data-rel="CSS">
+						<h3>CSS</h3>
+						
+						<code>
+							<pre>
+/* tab and sub tab */
+.tab,.subtab{
+	display: none;
+	overflow: hidden;
+}
+/* selected tab and selected sub tab*/
+.selectedTab,.selectedSubTab{
+	display: block;
+}
+
+/*
+generated Top level Tab Navigation
+*/
+#tabsNav {
+	overflow: hidden;
+	border-bottom:1px solid #ddd;
+}
+#tabsNav ul, .subNav ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+#tabsNav li, .subNav li{
+	display: inline-block;
+}
+#tabsNav a, .subNav a{
+	display: block;
+	padding:5px 10px;
+	text-decoration: none;
+	
+}
+.subNav{
+	margin:10px;
+	
+}
+#tabsNav a.selectedNav{
+	background: #eee;
+}
+.subNav a.selectedSubNav{
+	background: #ddf;
+}
+							</pre>
+						</code>
+					</div>
+				</div>
+				<div class="tab" data-rel="Info">
+					<h3>Info</h3>
+					
+					<p> You can fork or star at <a href="https://github.com/myokyawhtun/kptabs">https://github.com/myokyawhtun/kptabs</a></p>
+					
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

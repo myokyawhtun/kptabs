@@ -21,3 +21,14 @@ h1{
 	font: 40px 'Source Sans Pro', sans-serif;
 	font-weight: 200;
 }
+
+code{
+	border:1px solid #ddd;
+	background: #efefef;
+	font:12px Consolas, "Liberation Mono", Courier, monospace;
+	display: block;
+	padding: 10px;
+}
+pre{
+	margin: 0px;
+}
