@@ -1,0 +1,23 @@
+body{
+
+	margin:0px;
+
+	background: #efefef;
+}
+
+#wrapper{
+
+	width:650px;
+	margin:100px auto;
+	padding: 25px;
+	background: #fff;
+	border:1px solid #ddd;
+	border-radius: .3em;
+	font: 15px 'Droid Sans', sans-serif;
+	line-height: 1.4em;
+}
+
+h1{
+	font: 40px 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+}

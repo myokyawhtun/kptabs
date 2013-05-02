@@ -1,0 +1,9 @@
+/* tab and sub tab */
+.tab,.subtab{
+	display: none;
+	overflow: hidden;
+}
+/* selected tab and selected sub tab*/
+.selectedTab,.selectedSubTab{
+	display: block;
+}
